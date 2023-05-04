@@ -8,6 +8,7 @@ import { makeRequest } from "../../axios";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/authContext";
 import Update from "../../components/update/Update"
+import Share from "../../components/share/Share";
 
 const Profile = () => {
 
@@ -88,6 +89,7 @@ const Profile = () => {
             </div>
           </div>
         </div>
+       <Share /> 
       <Posts userId = {userId}/>
       </div>
       </>
