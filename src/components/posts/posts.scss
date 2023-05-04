@@ -1,0 +1,16 @@
+@import "../../style.scss";
+
+.posts{
+  @include themify($themes) {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .info-warn{
+      background-color: themed("bg");
+      color: themed("textColor");
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+}
