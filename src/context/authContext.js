@@ -11,7 +11,7 @@ export const AuthContextProvider = ({children}) => {
 
   const login = async(inputs) => {
 
-    const res = await axios.post("https://social-site-backend-production.up.railway.app/api/auth/login", inputs, {
+    const res = await axios.post("https://social-site-tv87.onrender.com/api/auth/login", inputs, {
       withCredentials: true, credentials: 'include'
     })
     setCurrentUser(res.data)
